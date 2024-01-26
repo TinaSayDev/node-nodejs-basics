@@ -2,8 +2,8 @@ import path from 'path'
 const filename = import.meta.filename;
 const dirname = import.meta.dirname;
 import {release,version} from 'os'
-import a from './files/a.json' assert { type: "json" };
-import b from './files/b.json' assert { type: "json" };
+import a from './files/a.json' with { type: "json" };
+import b from './files/b.json' with { type: "json" };
 import { sayHello } from "./files/c.js";
 import { createServer as createServerHttp } from "http";
 
